@@ -24,18 +24,32 @@
     tr:nth-child(even) {
     background-color: #eeae22c8;
     }
+
+        .marker-flash {
+        background-color: red;
+        animation-name: marker-keyframe;
+        animation-duration: 2s;
+        animation-direction: alternate;
+        animation-iteration-count: infinite;
+        }
+
+        @keyframes marker-keyframe {
+        from {background-color: rgb(169, 13, 13); color:white;}
+        to {background-color:white; color: black;}
+        }
+
     </style>
 </head>
 
 <body>
 <span>
-    <img src="Logo504L.png" alt="504Logo" width="100" height="80" style="float: left; border-radius: 25px; margin-right: 20px; ">
+    <img src="Logo504L.png" alt="504Logo" width="100" height="80" style="float: left; border-radius: 20px; margin-right: 20px; ">
     <h2>新生504 “可點式” 課表</h2>
 </span>
 
 <br>
 
-<h4 id="weekmsg" style="background-color:#eeae22c8 ;"></h4>
+<h4 id="weekmsg" style="background-color: rgb(169, 13, 13); color:white;"></h4>
 <h3>單週 (雙周接於後)</h3>
 <table>
   <tr>
@@ -224,23 +238,21 @@
 <br>
 <h3>[作業&教材]：</h3>
 <h4>
-
-        <a href="https://classroom.google.com/u/0/a/not-turned-in/all" target="_blank">國語/社會/健康/主題(@GL課程)</a> &nbsp;
-        <a href="https://ono.tp.edu.tw/course/155754/homework" target="_blank">英文(@酷課)</a> &nbsp;
-        <a href="https://www.junyiacademy.org/profile/snes1050135/missions" target="_blank">數學(＠均ㄧ)</a>  &nbsp;
-        <a href="https://ono.tp.edu.tw/course/155784/content#/" target="_blank">自然(＠酷課)</a> &nbsp;
-        <a href="https://ono.tp.edu.tw/course/155787/content#/" target="_blank">資訊(＠酷課)</a> &nbsp;
-        <a href="https://ono.tp.edu.tw/course/155790/homework" target="_blank">音樂(@酷課)</a> &nbsp;
-        <a href="https://www.classcloud.tw/xinsheng504" target="_blank">視覺(@班雲)</a> &nbsp;
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJ4wrn6ntRKAe_WeEA68Zqbq_RjFwQPsAJdQRW-XbNZ9Olw/viewform" target="_blank">體育(@GL表單)</a>
-
+    <a href="https://classroom.google.com/u/0/a/not-turned-in/all" target="_blank">國語/社會/健康/主題(@GL課程)</a> &nbsp;
+    <a href="https://ono.tp.edu.tw/course/155754/homework" target="_blank">英文(@酷課)</a> &nbsp;
+    <a href="https://www.junyiacademy.org/profile/snes1050135/missions" target="_blank">數學(＠均ㄧ)</a>  &nbsp;
+    <a href="https://ono.tp.edu.tw/course/155784/content#/" target="_blank">自然(＠酷課)</a> &nbsp;
+    <a href="https://ono.tp.edu.tw/course/155787/content#/" target="_blank">資訊(＠酷課)</a> &nbsp;
+    <a href="https://ono.tp.edu.tw/course/155790/homework" target="_blank">音樂(@酷課)</a> &nbsp;
+    <a href="https://www.classcloud.tw/xinsheng504" target="_blank">視覺(@班雲)</a> &nbsp;
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSfpJ4wrn6ntRKAe_WeEA68Zqbq_RjFwQPsAJdQRW-XbNZ9Olw/viewform" target="_blank">體育(@GL表單)</a>
 </h4>
 
 <p>
     ( 班雲帳號：xinsheng504 / 密碼：liang504 / email：timmy830524@gmail.com )
 </p>
 
-<p style="color:rgb(111, 111, 111);"> V2.2 @2021-0615 Kevin Liao (悠爸) </p>
+<p style="color:rgb(111, 111, 111); font-size: 0.8em; text-align: center;"> V2.2 @2021-0615 , 程式設計：Kevin Liao (悠爸) </p>
 
 
 <script src="main.js"></script>
