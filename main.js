@@ -12,12 +12,13 @@ const dateNow = new Date();
 const weekdayStr = [ '日','ㄧ','二','三','四','五','六' ];
 
 // assembly display string
-var msgWeek = '今天是 ' + dateNow.toLocaleDateString();
-msgWeek += ' 第' + weekNo + '周 ' ;
-if ((weekNo % 2) == 0) {  msgWeek += " (雙周) "; } 
-else { msgWeek += " (單周) "; };
+var msgWeek = '今天是';
+if ((weekNo % 2) == 0) {  msgWeek += " 雙周"; } 
+else { msgWeek += " 單周"; };
 
-msgWeek += '星期' + weekdayStr[dateNow.getDay()] ;
+msgWeek += ' 星期' + weekdayStr[dateNow.getDay()] ;
+msgWeek += ' (' + dateNow.toLocaleDateString();
+msgWeek += ' - 第' + weekNo + '周)' ;
 
 console.log(msgWeek);
 document.getElementById("weekmsg").innerHTML = msgWeek ;
