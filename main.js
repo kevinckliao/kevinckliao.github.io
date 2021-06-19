@@ -40,4 +40,9 @@ function markDay (weekType, dayNum) {
 }
 
 //mark today
-markDay(weekType, dateNow.getDay());
+if (dateNow.getDay() >= 1 && dateNow.getDay() <=5) {
+  markDay(weekType, dateNow.getDay());
+}
+
+
+
