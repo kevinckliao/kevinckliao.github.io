@@ -1,4 +1,5 @@
 {
     "beautify.ignore": "",
-    "editor.tabSize": 2
+    "editor.tabSize": 2,
+    "print.colourScheme": "Visual Studio"
 }
