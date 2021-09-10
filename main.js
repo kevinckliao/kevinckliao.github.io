@@ -13,11 +13,11 @@ const dateNow = new Date();
 const weekdayStr = [ '日','ㄧ','二','三','四','五','六' ];
 
 // assembly display string
-var msgWeek = '今天是';
+var msgWeek = '今天是 &nbsp;';
 if ((weekNo % 2) == 0) {  msgWeek += " 雙周"; weekType = 1;} 
 else { msgWeek += " 單周"; weekType = 0;};
 
-msgWeek += ' / 星期' + weekdayStr[dateNow.getDay()] ;
+msgWeek += ' - 周' + weekdayStr[dateNow.getDay()] ;
 msgWeek += '  &nbsp; (' + dateNow.toLocaleDateString();
 msgWeek += ' - 第' + weekNo + '周)' ;
 
