@@ -17,9 +17,11 @@ var msgWeek = '今天是 &nbsp;';
 if ((weekNo % 2) == 0) {  msgWeek += " 雙周"; weekType = 1;} 
 else { msgWeek += " 單周"; weekType = 0;};
 
-msgWeek += ' - 周' + weekdayStr[dateNow.getDay()] ;
-msgWeek += '  &nbsp; (' + dateNow.toLocaleDateString();
-msgWeek += ' - 第' + weekNo + '周)' ;
+msgWeek += ' - 周' + weekdayStr[dateNow.getDay()] + '&nbsp;&nbsp;' ;
+msgWeek += dateNow.toLocaleDateString().split('/').slice(-2,-1) + '/' +
+           dateNow.toLocaleDateString().split('/').slice(-1);
+//msgWeek += '  &nbsp; (' + dateNow.toLocaleDateString();
+//msgWeek += ' - 第' + weekNo + '周)' ;
 
 //console.log(msgWeek);
 document.getElementById("weekmsg").innerHTML = msgWeek ;
